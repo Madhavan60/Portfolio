@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Madhavan K — Resume</title>
+  <title>Madhavan K — Resume (All-in-One)</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -11,14 +11,14 @@
   <!-- NAV -->
   <header class="nav-hero">
     <div class="nav-inner">
-      <a class="brand" href="index.html">Madhavan K</a>
+      <a class="brand" href="#top">Madhavan K</a>
 
-      <nav class="nav-menu">
-        <div class="nav-track"></div>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="achievements.html" class="nav-link">Achievements</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+      <nav class="nav-menu" role="navigation" aria-label="Main">
+        <div class="nav-track" aria-hidden="true"></div>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <div class="nav-actions">
@@ -26,60 +26,290 @@
       </div>
     </div>
 
-    <div class="mobile-drawer">
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="achievements.html">Achievements</a>
-      <a href="contact.html">Contact</a>
+    <div class="mobile-drawer" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <main class="container">
+  <main id="top" class="container">
+
+    <!-- Sidebar -->
     <aside class="panel">
       <div class="photoBox">
-        <img src="assets/MjNFSVIwNTY=.jpeg" />
+        <img src="assets/MjNFSVIwNTY=.jpeg" alt="Madhavan photo" />
       </div>
 
       <h2 class="name">MADHAVAN K</h2>
       <p class="role">Instrumentation Engineer</p>
 
-      <div class="muted">
+      <div class="muted" style="margin-top:12px;">
         <p>📍 Tiruppur, Tamil Nadu</p>
         <p>📞 +91 9042846606</p>
         <p>✉️ <a href="mailto:Kumarmadhavan04@gmail.com">Kumarmadhavan04@gmail.com</a></p>
       </div>
 
+      <div class="sideButtons" style="margin-top:14px">
+        <a class="btn" href="assets/Professional Modern CV Resume-1.pdf" download="Professional Modern CV Resume-1.pdf">Download Resume</a>
+      </div>
+
       <section class="sideSection">
         <h3>Inplant Training</h3>
         <ul>
-          <li>Seshasayee Paper & Boards Ltd</li>
+          <li>Seshasayee Paper &amp; Boards Ltd</li>
           <li>Ponni Sugars Erode Ltd.</li>
         </ul>
       </section>
     </aside>
 
+    <!-- Main content -->
     <section class="content">
-      <h1>Career Objective</h1>
-      <p>To secure a challenging entry-level role in instrumentation and automation...</p>
 
-      <h2>Education</h2>
-      <ul>
-        <li>B.E Electronics & Instrumentation Engineering — CGPA 7.69</li>
-        <li>Higher Secondary — 81%</li>
-      </ul>
+      <!-- ABOUT -->
+      <article id="about" class="content-box section-block">
+        <h1>About</h1>
+        <p class="muted">Instrumentation engineering student with hands-on projects in robotics and medical devices. Passionate about embedded systems, sensors, and building end-to-end prototypes that solve real problems.</p>
 
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Neerbot</b> — Water surface cleaning system</li>
-        <li><b>Insuchill</b> — Temperature controlled insulin pen</li>
-      </ul>
+        <h2>Summary</h2>
+        <p>I enjoy embedded systems, sensor integration, and hardware prototyping with small web dashboards for demos. Comfortable with MATLAB and electrical CAD tools.</p>
 
-      <h2>Areas of Interest</h2>
-      <p>Embedded systems · IoT · Digital circuits</p>
+        <h2>Education</h2>
+        <ul>
+          <li>B.E — Electronics &amp; Instrumentation Engineering, Kongu Engineering College (CGPA: 7.69, till 4th sem)</li>
+          <li>Higher Secondary — Vidhya Vikas Matric HSS, Tirupur — 81%</li>
+        </ul>
+      </article>
+
+      <!-- SKILLS -->
+      <article id="skills" class="content-box section-block">
+        <h1>Skills</h1>
+        <p class="muted">Grouped as individual cards so each skill group can stand out.</p>
+
+        <div class="item-grid">
+          <div class="item-card" aria-label="Technical skills">
+            <h3>Technical</h3>
+            <ul>
+              <li>Embedded Systems &amp; Microcontrollers (Arduino, STM32)</li>
+              <li>Sensor interfacing, Data acquisition, Signal conditioning</li>
+              <li>Control systems basics &amp; PLC fundamentals</li>
+              <li>Analog electronics: integrator circuits, ADC/DAC</li>
+              <li>MATLAB — real-time sensor analysis</li>
+            </ul>
+          </div>
+
+          <div class="item-card" aria-label="Software and tools">
+            <h3>Software / Tools</h3>
+            <ul>
+              <li>AutoCAD Electrical, EPLAN</li>
+              <li>MATLAB</li>
+              <li>Basic React / Vite for UI demos</li>
+              <li>Git — version control basics</li>
+            </ul>
+          </div>
+
+          <div class="item-card" aria-label="Soft skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Problem solving &amp; critical thinking</li>
+              <li>Team collaboration &amp; communication</li>
+              <li>Project planning &amp; prototyping discipline</li>
+            </ul>
+          </div>
+
+          <div class="item-card" aria-label="Interests">
+            <h3>Interests</h3>
+            <p>Embedded IoT systems, PCB prototyping, low-power sensors, and full-stack demo dashboards.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACHIEVEMENTS -->
+      <article id="achievements" class="content-box section-block">
+        <h1>Achievements & Presentations</h1>
+        <p class="muted">Major accomplishments and certifications.</p>
+
+        <div class="item-grid">
+          <div class="item-card" aria-label="IDEATHON prize">
+            <h3>IDEATHON '25 — 2nd Prize</h3>
+            <p class="muted">Kongu Engineering College (August 2025)</p>
+            <ul>
+              <li>2nd place for Neerbot project concept & prototype demonstration.</li>
+            </ul>
+          </div>
+
+          <div class="item-card" aria-label="E-summit">
+            <h3>Strategy Showdown — E-Summit 2k25</h3>
+            <p class="muted">IIT Roorkee — Paper Presentation</p>
+            <ul><li>Presented strategy-focused paper and participated in Q&A.</li></ul>
+          </div>
+
+          <div class="item-card" aria-label="Virtual Reality">
+            <h3>Virtual Reality — e-horizon '24</h3>
+            <p class="muted">Paper Presentation — KEC</p>
+            <ul><li>Presented research on VR applications.</li></ul>
+          </div>
+
+          <div class="item-card" aria-label="Certifications">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Real Time Analysis of Sensors and Transducers using MATLAB</li>
+              <li>AutoCAD Electrical and EPLAN</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- CONTACT -->
+      <article id="contact" class="content-box section-block">
+        <h1>Contact</h1>
+
+        <p><strong>Location:</strong> Tiruppur, Tamil Nadu, India</p>
+        <p><strong>Phone:</strong> +91 9042846606</p>
+        <p><strong>Email:</strong> <a href="mailto:Kumarmadhavan04@gmail.com">Kumarmadhavan04@gmail.com</a></p>
+
+        <h2>Connect</h2>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Madhavan60" target="_blank" rel="noopener noreferrer">github.com/Madhavan60</a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/madhavan-k-a1a203264/" target="_blank" rel="noopener noreferrer">linkedin.com/in/madhavan-k-a1a203264</a>
+        </p>
+
+      </article>
+
     </section>
   </main>
 
-<script src="js/nav.js"></script>
+  <!-- Animated nav + mobile drawer JS (works with in-page anchors) -->
+  <script>
+  (function(){
+    const links = Array.from(document.querySelectorAll('.nav-link'));
+    const track = document.querySelector('.nav-track');
+    const hamb = document.querySelector('.hamb');
+    const drawer = document.querySelector('.mobile-drawer');
 
+    // Update track position relative to the visible nav link
+    function updateTrack(el){
+      if(!el || !track) return;
+      const r = el.getBoundingClientRect();
+      const menuRect = el.closest('.nav-menu').getBoundingClientRect();
+      const left = r.left - menuRect.left;
+      track.style.width = r.width + 'px';
+      track.style.transform = `translateX(${left}px)`;
+      links.forEach(l => l.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    // Find which section is currently visible (intersection observer)
+    const sections = Array.from(document.querySelectorAll('article[id]'));
+    const sectionById = {};
+    sections.forEach(s => sectionById[s.id] = s);
+
+    // Map nav links to sections
+    const linkMap = {};
+    links.forEach(a => {
+      const href = a.getAttribute('href');
+      if(href && href.startsWith('#')){
+        linkMap[href.slice(1)] = a;
+        a.addEventListener('click', (e)=>{
+          // smooth scroll to section
+          e.preventDefault();
+          const target = document.getElementById(href.slice(1));
+          target && target.scrollIntoView({behavior:'smooth', block:'start'});
+          // close drawer if open
+          if(drawer && drawer.style.display === 'block'){
+            drawer.style.display = 'none';
+            hamb.setAttribute('aria-expanded','false');
+            document.body.style.overflow = '';
+          }
+          updateTrack(a);
+        });
+      }
+    });
+
+    // IntersectionObserver to update active nav link on scroll
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const id = entry.target.id;
+          const link = linkMap[id];
+          if(link) updateTrack(link);
+        }
+      });
+    }, { root: null, rootMargin: '-30% 0px -50% 0px', threshold: 0 });
+
+    sections.forEach(s => obs.observe(s));
+
+    // initialize track on load
+    window.addEventListener('load', ()=> {
+      // if a hash exists initially, focus that section
+      const hash = location.hash ? location.hash.slice(1) : null;
+      if(hash && linkMap[hash]){
+        updateTrack(linkMap[hash]);
+        document.getElementById(hash)?.scrollIntoView();
+      } else {
+        // default to About
+        updateTrack(linkMap['about'] || links[0]);
+      }
+      // small resize after load
+      setTimeout(()=> window.dispatchEvent(new Event('resize')), 120);
+    });
+
+    window.addEventListener('resize', ()=> updateTrack(document.querySelector('.nav-link.active') || links[0]));
+
+    // hover behavior for nav links
+    links.forEach(a=>{
+      a.addEventListener('mouseenter', ()=> updateTrack(a));
+      a.addEventListener('focus', ()=> updateTrack(a));
+      a.addEventListener('mouseleave', ()=> {
+        const active = document.querySelector('.nav-link.active') || links[0];
+        updateTrack(active);
+      });
+    });
+
+    // mobile hamburger toggle
+    if(hamb && drawer){
+      hamb.addEventListener('click', ()=>{
+        const opened = hamb.getAttribute('aria-expanded') === 'true';
+        hamb.setAttribute('aria-expanded', String(!opened));
+        if(!opened){
+          drawer.style.display = 'block';
+          drawer.setAttribute('aria-hidden','false');
+          document.body.style.overflow = 'hidden';
+        } else {
+          drawer.style.display = 'none';
+          drawer.setAttribute('aria-hidden','true');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // close drawer when clicking a drawer link
+      drawer.querySelectorAll('a').forEach(a=>{
+        a.addEventListener('click', ()=> {
+          drawer.style.display = 'none';
+          drawer.setAttribute('aria-hidden','true');
+          hamb.setAttribute('aria-expanded','false');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // close drawer on outside click
+      document.addEventListener('click', (e)=>{
+        if(!drawer || !hamb) return;
+        if(drawer.contains(e.target) || hamb.contains(e.target)) return;
+        if(drawer.style.display === 'block'){
+          drawer.style.display = 'none';
+          drawer.setAttribute('aria-hidden','true');
+          hamb.setAttribute('aria-expanded','false');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
